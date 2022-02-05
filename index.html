@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<!-- mos harro te rregullosh pjesen e final state qe te updatohet nqs heqim te vjetren dhe vendosim te rene; 
+    dhe qe stringu i kalimit random te qendroje gjitmone epsilon dhe mos te marri vleren e fundit;
+-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script src="https://d3js.org/d3.v5.min.js"></script>
+<script
+  src="https://unpkg.com/viz.js@1.8.1/viz.js"
+  type="javascript/worker"
+></script>
+<script src="https://unpkg.com/d3-graphviz@2.6.1/build/d3-graphviz.js"></script>
+<script
+src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+crossorigin="anonymous"
+></script>
+<script src="C:\Users\Erdion Hoxha\OneDrive\Desktop\toc\scripti1.js"></script>
+<script src="C:\Users\Erdion Hoxha\OneDrive\Desktop\toc\e_NFA.js"></script>
+<body>
+    <label for="initial-state">Initial state: </label>
+    <input type="text" name="initial-state" id="initial-state"><br><br>
+    <label for="final-state">Final state: </label>
+    <input type="text" name="final-state" id="final-state"><br><br>
+    &delta; (  <input type="text" name="first-state" id="first-state" > , <input type="text" name="transition-string" id="transition-string" value="&epsilon;">  ) = <input type="text" name="last-state" id="last-state" > 
+    <button id="submit">Fut</button>
+    <div id="current-nfa"></div>
+    <br><br><br>
+    <button id="convert-to-nfa">Konverto ne NFA</button>
+    <br><br><br>
+    <div id="nfa"></div>
+</body>
+</html>
